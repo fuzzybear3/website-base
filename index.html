@@ -1,6 +1,17 @@
-<h1>Hello World
-</h1>
+<!DOCTYPE html>
+<html>
 
+<head>
+  <link data-trunk rel="tailwind-css" href="/style/tailwind.css" />
 
-<a href="https://travel.stevenguido.com/">Travel Tracker</a>
+  <!-- Include favicon in dist output: see https://trunkrs.dev/assets/#icon -->
+  <link data-trunk rel="icon" href="public/favicon.ico" />
+<link data-trunk rel="copy-dir" href="/static"/>
 
+  <!-- include support for `wasm-bindgen --weak-refs` - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
+  <link data-trunk rel="rust" data-wasm-opt="z" data-weak-refs />
+</head>
+
+<body></body>
+
+</html>
