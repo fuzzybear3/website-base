@@ -28,6 +28,10 @@ pub fn App() -> impl IntoView {
         <Router>
             <Routes fallback=|| view! { NotFound }>
                 <Route path=path!("/") view=Home/>
+               <Route
+            path=path!("/deck")
+            view=|| view! { <Redirect path="https://raw.githubusercontent.com/fuzzybear3/deck/refs/heads/main/setup.sh"/> }
+          />
             </Routes>
         </Router>
     }
