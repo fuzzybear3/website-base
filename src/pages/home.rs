@@ -37,6 +37,9 @@ pub fn Home() -> impl IntoView {
                 />
 
             </div>
+
+
+            <a href="https://raw.githubusercontent.com/fuzzybear3/deck/refs/heads/main/setup.sh"> deck</a>
         </ErrorBoundary>
     }
 }
