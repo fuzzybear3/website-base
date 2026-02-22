@@ -1,6 +1,4 @@
-// use crate::components::counter_btn::Button;
 use crate::components::project_block::Project_block;
-use crate::components::*;
 use leptos::prelude::*;
 
 /// Default Home Page
@@ -10,9 +8,7 @@ pub fn Home() -> impl IntoView {
         <ErrorBoundary fallback=|errors| {
             view! {
                 <h1>"Uh oh! Something went wrong!"</h1>
-
                 <p>"Errors: "</p>
-                // Render a list of errors as strings - good for development purposes
                 <ul>
                     {move || {
                         errors
@@ -21,13 +17,10 @@ pub fn Home() -> impl IntoView {
                             .map(|(_, e)| view! { <li>{e.to_string()}</li> })
                             .collect_view()
                     }}
-
                 </ul>
             }
         }>
-
             <div class="flex justify-center text-slate-400 items-center h-screen bg-slate-900">
-
                 <Project_block
                     title=String::from("Travel Tracker")
                     img=String::from("/static/travel.png")
@@ -35,11 +28,7 @@ pub fn Home() -> impl IntoView {
                         "This is a description of the content inside the box. Add more text here to see how it adjusts.",
                     )
                 />
-
             </div>
-
-
-            // <a href="https://raw.githubusercontent.com/fuzzybear3/deck/refs/heads/main/setup.sh"> deck</a>
         </ErrorBoundary>
     }
 }

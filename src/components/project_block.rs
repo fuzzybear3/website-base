@@ -1,6 +1,6 @@
 use leptos::prelude::*;
 
-/// A parameterized incrementing button
+/// A project card linking to an external project
 #[component]
 pub fn Project_block(title: String, img: String, description: String) -> impl IntoView {
     view! {
@@ -16,7 +16,6 @@ pub fn Project_block(title: String, img: String, description: String) -> impl In
                 <div class="box-description p-4 text-sm text-gray-600 text-center">
                     {description}
                 </div>
-
             </div>
         </a>
     }

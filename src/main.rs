@@ -1,12 +1,7 @@
-use landing_page::App;
-use leptos::prelude::*;
+use leptos::mount;
+use website::App;
 
-fn main() {
-    // set up logging
-    _ = console_log::init_with_level(log::Level::Debug);
+pub fn main() {
     console_error_panic_hook::set_once();
-
-    mount_to_body(|| {
-        view! { <App/> }
-    })
+    mount::mount_to_body(App);
 }

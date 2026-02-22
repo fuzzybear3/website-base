@@ -1,6 +1,6 @@
 use leptos::prelude::*;
 use leptos_meta::*;
-use leptos_router::{components::*, path};
+use leptos_router::{components::*, StaticSegment};
 
 // Modules
 mod components;
@@ -26,12 +26,8 @@ pub fn App() -> impl IntoView {
         <Meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <Router>
-            <Routes fallback=|| view! { NotFound }>
-                <Route path=path!("/") view=Home/>
-//                <Route
-//            path=path!("/deck")
-//            view=|| view! { <Redirect path="https://raw.githubusercontent.com/fuzzybear3/deck/refs/heads/main/setup.sh"/> }
-//          />
+            <Routes fallback=|| view! { <p>"Not Found"</p> }>
+                <Route path=StaticSegment("") view=Home/>
             </Routes>
         </Router>
     }
