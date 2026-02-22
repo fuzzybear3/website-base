@@ -52,7 +52,7 @@ pub fn Home() -> impl IntoView {
             </div>
 
             // Project grid
-            <main class="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8 max-w-6xl mx-auto w-full items-start">
+            <main class="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 p-4 sm:p-8 max-w-6xl mx-auto w-full items-start">
                 <For
                     each=move || filtered()
                     key=|p| p.title

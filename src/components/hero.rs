@@ -3,9 +3,9 @@ use leptos::prelude::*;
 #[component]
 pub fn Hero() -> impl IntoView {
     view! {
-        <header class="flex flex-col items-center justify-center pt-20 pb-12 px-4 text-center">
-            <h1 class="text-5xl font-bold text-white mb-3 tracking-tight">"Steven Guido"</h1>
-            <p class="text-xl text-slate-400 mb-8">"Robotics Gachizei"</p>
+        <header class="flex flex-col items-center justify-center pt-12 sm:pt-20 pb-8 sm:pb-12 px-4 text-center">
+            <h1 class="text-3xl sm:text-5xl font-bold text-white mb-3 tracking-tight">"Steven Guido"</h1>
+            <p class="text-lg sm:text-xl text-slate-400 mb-6 sm:mb-8">"Robotics Gachizei"</p>
             <div class="flex items-center gap-6">
                 <a
                     href="https://github.com/fuzzybear3"

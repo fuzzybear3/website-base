@@ -16,6 +16,7 @@ pub fn App() -> impl IntoView {
     view! {
         <Html attr:lang="en" attr:dir="ltr" attr:data-theme="dark"/>
         <Title text="Steven Guido"/>
+        <Meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <Router>
             <Routes fallback=|| view! { <NotFound/> }>
