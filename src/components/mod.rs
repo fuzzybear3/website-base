@@ -1,2 +1,4 @@
 pub mod counter_btn;
-pub mod project_block;
+pub mod footer;
+pub mod hero;
+pub mod project_card;
