@@ -17,6 +17,13 @@ pub fn Hero() -> impl IntoView {
                 </a>
                 <span class="text-slate-700">"·"</span>
                 <a
+                    href="https://blog.stevenguido.com"
+                    class="text-slate-400 hover:text-white transition-colors font-medium"
+                >
+                    "Blog"
+                </a>
+                <span class="text-slate-700">"·"</span>
+                <a
                     href="mailto:stevenrguido@gmail.com"
                     class="text-slate-400 hover:text-white transition-colors font-medium"
                 >
