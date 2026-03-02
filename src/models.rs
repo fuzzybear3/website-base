@@ -19,7 +19,7 @@ pub const PROJECTS: &[Project] = &[
     },
     Project {
         title: "Magic Eye Games",
-        href: "https://magic_eye.stevenguido.com",
+        href: "https://magic-eye.stevenguido.com",
         src: "/static/magic_eye.png",
         description: "A collection of games rendered as Magic Eye stereograms. Includes 2-player Pong and more.",
         tags: &["software"],
