@@ -18,11 +18,11 @@ pub const PROJECTS: &[Project] = &[
         coming_soon: false,
     },
     Project {
-        title: "New Project",
-        href: "#",
-        src: "",
-        description: "Something new is in the works.",
-        tags: &["hardware"],
-        coming_soon: true,
+        title: "Magic Eye Games",
+        href: "https://magic_eye.stevenguido.com",
+        src: "/static/magic_eye.png",
+        description: "A collection of games rendered as Magic Eye stereograms. Includes 2-player Pong and more.",
+        tags: &["software"],
+        coming_soon: false,
     },
 ];
