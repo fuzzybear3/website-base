@@ -26,6 +26,14 @@ pub const PROJECTS: &[Project] = &[
         coming_soon: false,
     },
     Project {
+        title: "Nihongo Run",
+        href: "https://nihongo-run.stevenguido.com",
+        src: "/static/nihongo-run.png",
+        description: "A Japanese language practice game.",
+        tags: &["software"],
+        coming_soon: false,
+    },
+    Project {
         title: "Numazu Tabemono",
         href: "https://tabemono.stevenguido.com",
         src: "",
