@@ -36,7 +36,7 @@ pub const PROJECTS: &[Project] = &[
     Project {
         title: "Numazu Tabemono",
         href: "https://tabemono.stevenguido.com",
-        src: "",
+        src: "/static/tabemono.png",
         description: "A food and restaurant leaderboard for the town of Numazu.",
         tags: &["software"],
         coming_soon: false,
